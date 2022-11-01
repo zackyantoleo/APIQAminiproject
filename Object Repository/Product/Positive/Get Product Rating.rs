@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Product by ID</name>
+   <name>Get Product Rating</name>
    <tag></tag>
-   <elementGuidId>96052a58-6d6c-4ee3-a169-1cf4e1e1fd9d</elementGuidId>
+   <elementGuidId>a91eeb6a-bdf9-40f1-8acb-8b5e5fa5de7d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/8</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/products/a/ratings</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get All Product</name>
+   <name>Get All Product with invalid Endpoint</name>
    <tag></tag>
-   <elementGuidId>5ec893e9-9edb-479a-b5d5-ef7251e37c09</elementGuidId>
+   <elementGuidId>c947e78d-858a-40a0-bf5a-e9d0c7701144</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/product</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

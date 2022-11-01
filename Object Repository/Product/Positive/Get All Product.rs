@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Delete Product</name>
+   <name>Get All Product</name>
    <tag></tag>
-   <elementGuidId>79db30e8-9621-4e91-af1d-59894a1038d9</elementGuidId>
+   <elementGuidId>5ec893e9-9edb-479a-b5d5-ef7251e37c09</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,8 +14,8 @@
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://alta-shop.herokuapp.com/api/product</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create New Order</name>
+   <name>Login</name>
    <tag></tag>
-   <elementGuidId>ba7411e0-970b-4bd9-8f5a-a566c8f81f22</elementGuidId>
+   <elementGuidId>46709c36-23bc-42a7-89c6-eedf67e4d575</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n  {\n    \&quot;product_id\&quot;: 15,\n    \&quot;quantity\&quot;: 50\n  },\n   {\n    \&quot;product_id\&quot;: 177,\n    \&quot;quantity\&quot;: 30\n  }\n]&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot; : \&quot;zack@gmail.com\&quot;,\n  \&quot;password\&quot; : \&quot;zack123\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,21 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>1ee822fd-2953-4abe-a399-90bb48a343a9</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InphY2siLCJFbWFpbCI6InphY2tAZ21haWwuY29tIn0.DEbvDgV-5elWrAUAcS5tRMKFCsMTMYTk-myCVouwEgk</value>
-      <webElementGuid>a8abc89e-e815-46be-bbcd-ce88b94fb2be</webElementGuid>
+      <webElementGuid>e04d202c-14ba-4b09-80d3-9fcbf35275bf</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/orders</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/auth/login</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

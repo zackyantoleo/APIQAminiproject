@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create New Order</name>
+   <name>Create New Product</name>
    <tag></tag>
-   <elementGuidId>ba7411e0-970b-4bd9-8f5a-a566c8f81f22</elementGuidId>
+   <elementGuidId>ecece81b-19fd-4bb0-9325-9bcdfd2f11e7</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;[\n  {\n    \&quot;product_id\&quot;: 15,\n    \&quot;quantity\&quot;: 50\n  },\n   {\n    \&quot;product_id\&quot;: 177,\n    \&quot;quantity\&quot;: 30\n  }\n]&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;:\&quot;Nokia\&quot;,\n    \&quot;description\&quot;:\&quot;Conneting People\&quot;,\n    \&quot;price\&quot;:199,\n    \&quot;categories\&quot;:[1000000]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,21 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>1ee822fd-2953-4abe-a399-90bb48a343a9</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InphY2siLCJFbWFpbCI6InphY2tAZ21haWwuY29tIn0.DEbvDgV-5elWrAUAcS5tRMKFCsMTMYTk-myCVouwEgk</value>
-      <webElementGuid>a8abc89e-e815-46be-bbcd-ce88b94fb2be</webElementGuid>
+      <webElementGuid>ae63ba67-acda-4061-8729-b7d96113dced</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/orders</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/products</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
