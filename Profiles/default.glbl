@@ -4,4 +4,24 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>200</initValue>
+      <name>statuscode200</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>400</initValue>
+      <name>statuscode400</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>404</initValue>
+      <name>statuscode404</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>null</initValue>
+      <name>responseglob</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

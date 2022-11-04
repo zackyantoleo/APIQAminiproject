@@ -17,15 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Auth/Positive/Register'))
+response = WS.sendRequest(findTestObject('Categories/Positive/Create Category'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with invalid payload format'))
+response = WS.sendRequest(findTestObject('Categories/Negative/Create category without name'))
 
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 500)
 
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with empty fullname'))
+response = WS.sendRequest(findTestObject('Categories/Positive/Get All Category'))
 
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 200)
+
+response = WS.sendRequest(findTestObject('Categories/Negative/Get All Category with invalid endpoint'))
+
+WS.verifyResponseStatusCode(response, 404)
+
+response = WS.sendRequest(findTestObject('Categories/Positive/Get Category by ID'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+response = WS.sendRequest(findTestObject('Categories/Negative/Get Category with invalid ID'))
+
+WS.verifyResponseStatusCode(response, 500)
 

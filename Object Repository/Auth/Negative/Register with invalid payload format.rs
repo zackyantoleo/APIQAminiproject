@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Login with invalid payload</name>
+   <name>Register with invalid payload format</name>
    <tag></tag>
-   <elementGuidId>40cbe1ef-ccf2-4652-bda7-17873464d6f9</elementGuidId>
+   <elementGuidId>0eb93869-426e-434f-bb98-c3883f55431f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot; : \&quot;zackapi5\&quot;,\n  \&quot;mail\&quot; : \&quot;zackapi5@gmail.com\&quot;,\n  \&quot;pass\&quot; : \&quot;zack123\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>54dc13cd-d6e1-48b4-aab2-f6ea12f465f1</webElementGuid>
+   </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl></restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/auth/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Product Rating with invalid ID</name>
+   <name>Get Order with invalid id</name>
    <tag></tag>
-   <elementGuidId>06d2e4d5-b876-4e76-8b4b-71049b60ae1e</elementGuidId>
+   <elementGuidId>98a77bb3-faad-4df6-9d61-b9af2f0d6f28</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -14,16 +14,16 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
+      <name>Authorization</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>6688caac-e5e3-410d-b682-dff2a2517cfc</webElementGuid>
+      <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InphY2siLCJFbWFpbCI6InphY2tAZ21haWwuY29tIn0.DEbvDgV-5elWrAUAcS5tRMKFCsMTMYTk-myCVouwEgk</value>
+      <webElementGuid>2cc49f45-6d0c-4903-b540-73fa2c88712c</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/15/ratings</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/orders/-2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

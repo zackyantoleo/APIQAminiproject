@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Product Rating with invalid ID</name>
+   <name>Get Category with invalid ID</name>
    <tag></tag>
-   <elementGuidId>06d2e4d5-b876-4e76-8b4b-71049b60ae1e</elementGuidId>
+   <elementGuidId>2d4d60ef-2042-40b0-8064-dfe746926b45</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
@@ -11,19 +11,11 @@
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
    <httpBodyType></httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>6688caac-e5e3-410d-b682-dff2a2517cfc</webElementGuid>
-   </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/15/ratings</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/categories/-2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

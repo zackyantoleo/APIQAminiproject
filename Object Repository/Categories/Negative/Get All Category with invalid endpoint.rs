@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create New Product with invalid payload</name>
+   <name>Get All Category with invalid endpoint</name>
    <tag></tag>
-   <elementGuidId>c9782de8-66b2-4e7f-88bd-e572c10e9657</elementGuidId>
+   <elementGuidId>80dba50a-4330-4d39-86bd-d69a45cfdaaa</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;:\&quot;Nokia\&quot;,\n    \&quot;description\&quot;:\&quot;Conneting People\&quot;,\n    \&quot;price\&quot;:199,\n    \&quot;categories\&quot;:[1000000]\n}&quot;,
-  &quot;contentType&quot;: &quot;application/json&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Content-Type</name>
-      <type>Main</type>
-      <value>application/json</value>
-      <webElementGuid>ae63ba67-acda-4061-8729-b7d96113dced</webElementGuid>
-   </httpHeaderProperties>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://alta-shop.herokuapp.com/categories</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

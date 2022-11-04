@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Product Rating with invalid ID</name>
+   <name>Register with empty fullname</name>
    <tag></tag>
-   <elementGuidId>06d2e4d5-b876-4e76-8b4b-71049b60ae1e</elementGuidId>
+   <elementGuidId>2593c77e-d15d-4ffe-a289-e75c9a584bf0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;fullname\&quot; : \&quot;\&quot;,\n  \&quot;email\&quot; : \&quot;zackapi@gmail.com\&quot;,\n  \&quot;password\&quot; : \&quot;zack123\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>6688caac-e5e3-410d-b682-dff2a2517cfc</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>54dc13cd-d6e1-48b4-aab2-f6ea12f465f1</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/15/ratings</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://alta-shop.herokuapp.com/api/auth/register</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

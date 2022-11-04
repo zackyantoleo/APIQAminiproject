@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Register with some empty data</name>
+   <name>Create New Product without name</name>
    <tag></tag>
-   <elementGuidId>2593c77e-d15d-4ffe-a289-e75c9a584bf0</elementGuidId>
+   <elementGuidId>c9782de8-66b2-4e7f-88bd-e572c10e9657</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;fullname\&quot; : \&quot;zackapi\&quot;,\n  \&quot;email\&quot; : \&quot;zackapi1@gmail.com\&quot;,\n  \&quot;password\&quot; : \&quot;zack123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;description\&quot;:\&quot;Conneting People\&quot;,\n    \&quot;price\&quot;:199,\n    \&quot;categories\&quot;:[\n        64\n    ]\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>54dc13cd-d6e1-48b4-aab2-f6ea12f465f1</webElementGuid>
+      <webElementGuid>ae63ba67-acda-4061-8729-b7d96113dced</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/auth/register</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/products</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

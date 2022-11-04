@@ -17,15 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Auth/Positive/Register'))
+response = WS.sendRequest(findTestObject('Auth/Positive/Get User information'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with invalid payload format'))
+response = WS.sendRequest(findTestObject('Auth/Negative/Get User withou token'))
 
-WS.verifyResponseStatusCode(response, 400)
-
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with empty fullname'))
-
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 401)
 

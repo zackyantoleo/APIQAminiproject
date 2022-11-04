@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Login with some empty data</name>
+   <name>Login with empty password</name>
    <tag></tag>
    <elementGuidId>a1de3b90-8e1b-462f-b4aa-d82e3aa83d72</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;email\&quot; : \&quot;zack@gmail.com\&quot;,\n  \&quot;password\&quot; : \&quot;zack123\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;email\&quot; : \&quot;zack@gmail.com\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

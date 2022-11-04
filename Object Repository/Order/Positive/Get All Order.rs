@@ -1,55 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get User information invalid id</name>
+   <name>Get All Order</name>
    <tag></tag>
-   <elementGuidId>85df2a6b-ed5c-458d-b122-cb89cffea120</elementGuidId>
+   <elementGuidId>cb48acf1-1877-49c5-8e3f-4636816806f0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Authorization:type</name>
+      <name>Content-Type</name>
       <type>Main</type>
-      <value>OAuth 1.0</value>
-      <webElementGuid>22fafaf1-297e-4ddc-877f-8e8e040aab00</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization:oauth_consumer_key</name>
-      <type>Main</type>
-      <value></value>
-      <webElementGuid>4a9060da-1048-4b6d-abeb-5d802b71e4df</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization:oauth_consumer_secret</name>
-      <type>Main</type>
-      <value></value>
-      <webElementGuid>4d531ca4-aa4e-4fd7-a911-fb9e410c118f</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization:oauth_signature_method</name>
-      <type>Main</type>
-      <value>HMAC-SHA1</value>
-      <webElementGuid>c55f5f5a-1814-419a-9f8a-db98618a7b66</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization:oauth_token</name>
-      <type>Main</type>
-      <value>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InphY2siLCJFbWFpbCI6InphY2tAZ21haWwuY29tIn0.DEbvDgV-5elWrAUAcS5tRMKFCsMTMYTk-myCVouwEgk</value>
-      <webElementGuid>1bd80931-4bb9-4aa9-9a14-20148dcba39f</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>64f4a4d0-4400-4eef-ab9a-8f04a99b6664</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -57,13 +29,13 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6InphY2siLCJFbWFpbCI6InphY2tAZ21haWwuY29tIn0.DEbvDgV-5elWrAUAcS5tRMKFCsMTMYTk-myCVouwEgk</value>
-      <webElementGuid>51ac2006-b240-4e95-9cd2-dee3096a1ee6</webElementGuid>
+      <webElementGuid>b802a77c-7612-40f5-84fb-b330451ae544</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/auth/info</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/orders</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

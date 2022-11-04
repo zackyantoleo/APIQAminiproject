@@ -10,7 +10,7 @@
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;:\&quot;Nokia\&quot;,\n    \&quot;description\&quot;:\&quot;Conneting People\&quot;,\n    \&quot;price\&quot;:199,\n    \&quot;categories\&quot;:[1000000]\n}&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;:\&quot;Nokia\&quot;,\n    \&quot;description\&quot;:\&quot;Conneting People\&quot;,\n    \&quot;price\&quot;:199\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

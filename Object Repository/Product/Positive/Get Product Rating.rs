@@ -15,7 +15,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/a/ratings</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/products/173/ratings</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

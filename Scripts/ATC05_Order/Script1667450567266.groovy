@@ -17,15 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-response = WS.sendRequest(findTestObject('Auth/Positive/Register'))
+response = WS.sendRequest(findTestObject('Order/Positive/Create New Order'))
 
 WS.verifyResponseStatusCode(response, 200)
 
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with invalid payload format'))
+response = WS.sendRequest(findTestObject('Order/Negative/Create New Order without token'))
 
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 401)
 
-response = WS.sendRequest(findTestObject('Auth/Negative/Register with empty fullname'))
+response = WS.sendRequest(findTestObject('Order/Positive/Get All Order'))
 
-WS.verifyResponseStatusCode(response, 400)
+WS.verifyResponseStatusCode(response, 200)
+
+response = WS.sendRequest(findTestObject('Order/Negative/Get All Order without token'))
+
+WS.verifyResponseStatusCode(response, 401)
+
+response = WS.sendRequest(findTestObject('Order/Positive/Get Order by ID'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+response = WS.sendRequest(findTestObject('Order/Negative/Get Order with invalid id'))
+
+WS.verifyResponseStatusCode(response, 500)
 

@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get Product Rating with invalid ID</name>
+   <name>Create Category</name>
    <tag></tag>
-   <elementGuidId>06d2e4d5-b876-4e76-8b4b-71049b60ae1e</elementGuidId>
+   <elementGuidId>be7b5ae0-8897-4a27-8bd0-aad97df22729</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent></httpBodyContent>
-   <httpBodyType></httpBodyType>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;:\&quot;Handphone\&quot;,\n    \&quot;description\&quot;:\&quot;for chating purposes\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>6688caac-e5e3-410d-b682-dff2a2517cfc</webElementGuid>
+      <value>application/json</value>
+      <webElementGuid>d5bc7ef8-84d0-42e1-b206-20c38f3da7d7</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer </value>
+      <webElementGuid>6de87919-80bc-4e5f-80d3-ca70bb4f02bd</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/products/15/ratings</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://alta-shop.herokuapp.com/api/categories</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

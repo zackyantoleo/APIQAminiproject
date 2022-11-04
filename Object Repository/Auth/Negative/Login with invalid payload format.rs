@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create Category</name>
+   <name>Login with invalid payload format</name>
    <tag></tag>
-   <elementGuidId>be7b5ae0-8897-4a27-8bd0-aad97df22729</elementGuidId>
+   <elementGuidId>40cbe1ef-ccf2-4652-bda7-17873464d6f9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;description\&quot;:\&quot;test\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;mail\&quot; : \&quot;zack@gmail.com\&quot;,\n  \&quot;pass\&quot; : \&quot;zack123\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,21 +21,13 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>d5bc7ef8-84d0-42e1-b206-20c38f3da7d7</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>Authorization</name>
-      <type>Main</type>
-      <value>Bearer </value>
-      <webElementGuid>6de87919-80bc-4e5f-80d3-ca70bb4f02bd</webElementGuid>
+      <webElementGuid>518da74f-a463-4866-8bc8-5b55167acb48</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/categories</restUrl>
+   <restUrl>https://alta-shop.herokuapp.com/api/auth/login</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get All Order</name>
+   <name>Create category without name</name>
    <tag></tag>
-   <elementGuidId>cb48acf1-1877-49c5-8e3f-4636816806f0</elementGuidId>
+   <elementGuidId>31bb4d4c-1800-4d7d-8515-f6983d44e8f5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
+  &quot;text&quot;: &quot;{\n    \&quot;description\&quot;:\&quot;test\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -21,13 +21,21 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>64f4a4d0-4400-4eef-ab9a-8f04a99b6664</webElementGuid>
+      <webElementGuid>d5bc7ef8-84d0-42e1-b206-20c38f3da7d7</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Authorization</name>
+      <type>Main</type>
+      <value>Bearer </value>
+      <webElementGuid>6de87919-80bc-4e5f-80d3-ca70bb4f02bd</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.3.0</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://alta-shop.herokuapp.com/api/orders</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>https://alta-shop.herokuapp.com/api/categories</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
