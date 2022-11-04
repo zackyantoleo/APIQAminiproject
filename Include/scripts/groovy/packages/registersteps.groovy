@@ -52,7 +52,7 @@ class registersteps {
 	@When("Set new user payload with valid data")
 	def Setnewuserpayloadwithvaliddata() {
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Auth/Positive/Register'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob , 200)
 	}
 
@@ -72,11 +72,9 @@ class registersteps {
 
 	@Then("Receive valid Register HTTP response code 200")
 	def ReceivevalidRegisterHTTPresponsecode200() {
-
 	}
-	
+
 	@Then("Receive invalid Register HTTP response code 400")
 	def ReceiveinvalidRegisterHTTPresponsecode400() {
-
 	}
 }

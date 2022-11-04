@@ -50,21 +50,21 @@ class loginsteps {
 	@When("Set Login user with valid data")
 	def SetLoginuserwithvaliddata() {
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Auth/Positive/Login'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
 
 	@When("Set Login user with empty password")
 	def SetLoginuserwithemptypassword() {
 		GlobalVariable.responseglob= WS.sendRequest(findTestObject('Auth/Negative/Login with empty password'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob , 400)
 	}
 
 	@When("Set Login user with invalid payload format")
 	def SetLoginuserwithinvalidpayloadformat() {
 		GlobalVariable.responseglob= WS.sendRequest(findTestObject('Auth/Negative/Login with invalid payload format'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob , 400)
 	}
 
@@ -74,11 +74,9 @@ class loginsteps {
 
 	@Then("Receive Token and valid Login HTTP response code 200")
 	def ReceiveTokenandvalidLoginHTTPresponsecode200() {
-
 	}
 
 	@Then("Receive invalid HTTP Login response code 400")
 	def ReceiveinvalidHTTPLoginresponsecode400() {
-
 	}
 }

@@ -46,64 +46,58 @@ import cucumber.api.java.en.When
 class Categories {
 	@Given("Set POST HTTP method and Categories endpoint")
 	def SetPOSTHTTPmethodandCategoriesendpoint(){
-
 	}
-	
+
 	@Given("Set GET HTTP method and Categories endpoint")
 	def SetGETHTTPmethodandCategoriesendpoint(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Positive/Get All Category'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
-		
 	}
-	
+
 	@Given("Set GET HTTP method and invalid Categories endpoint")
 	def SetPOSTHTTPmethodandinvalidCategoriesendpoint(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Negative/Get All Category with invalid endpoint'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 404)
-		
 	}
-	
+
 	@Given("Set GET HTTP method and Categories endpoint with ID")
 	def SetPOSTHTTPmethodandCategoriesendpointID(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Positive/Get Category by ID'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
 	}
-	
+
 	@Given("Set GET HTTP method and Categories endpoint with invalid ID")
 	def SetPOSTHTTPmethodandCategoriesendpointinvalidID(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Negative/Get Category with invalid ID'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 500)
 	}
-	
+
 	@When("Set Categories payload with valid data")
 	def SetCategoriespayloadwithvaliddata(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Positive/Create Category'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@When("Set Categories payload without name")
 	def SetCategoriespayloadwithoutname(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Categories/Negative/Create category without name'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 500)
-		
 	}
-	
+
 	@Then("Receive HTTP response code 200")
 	def ReceivevalidHTTPresponsecode200(){
 	}
-	
+
 	@Then("Receive HTTP response code 500")
 	def ReceivevalidHTTPresponsecode500(){
 	}
-	
+
 	@Then("Receive HTTP response code 404")
 	def ReceivevalidHTTPresponsecode404(){
 	}

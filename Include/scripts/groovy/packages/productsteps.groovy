@@ -47,60 +47,54 @@ class productsteps {
 	@Given("Set POST HTTP method and Product endpoint and token to authorization header")
 	def SetPOSTHTTPmethodandProductEndpointsetoken(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Create New Product'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set DELETE HTTP method and Product endpoint")
 	def SetDELETEHTTPmethodandProductendpoint(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Delete Product'))
 
-WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set GET HTTP method and Product endpoint and token to authorization header")
-	def SetGETHTTPmethodandProductendpointandtokentoauthorizationheader(){		
+	def SetGETHTTPmethodandProductendpointandtokentoauthorizationheader(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Get All Product'))
 
-WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set GET HTTP method and Product endpoint with ID")
 	def SetGETHTTPmethodandProductendpointwithID(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Get Product by ID'))
 
-WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set GET HTTP method and Rating endpoint and token to authorization header")
 	def SetGETHTTPmethodandRatingendpointandtokentoauthorizationheader(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Get Product Rating'))
 
-WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set POST HTTP method and Rating endpoint and token to authorization header")
 	def SetPOSTHTTPmethodandRatingEndpointandTokentoAuthorizationheader(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Positive/Give Product Rating'))
 
-WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@When("Set Product payload with valid data")
 	def SetProductPayloadwithvaliddata(){
-		
 	}
-	
+
 	@When("Set Rating payload with valid data")
 	def SetRatingPayloadwithvaliddata(){
-		
 	}
-	
+
 	@And("Send DELETE HTTP request")
 	def SendDELETEHTTPrequest(){
-		
 	}
 }

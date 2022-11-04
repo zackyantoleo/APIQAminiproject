@@ -47,50 +47,46 @@ class ordersteps {
 	@Given("Set POST HTTP method and Order endpoint and token to authorization header")
 	def SetPOSTHTTPmethodandOrderendpointsetoken(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Positive/Create New Order'))
-		
+
 		WS.verifyResponseStatusCode (GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set POST HTTP method and Order endpoint")
-	def SetPOSTHTTPmethodandOrderendpoint(){		
+	def SetPOSTHTTPmethodandOrderendpoint(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Negative/Create New Order without token'))
-		
+
 		WS.verifyResponseStatusCode (GlobalVariable.responseglob, 401)
-		
 	}
-	
+
 	@Given("Set GET HTTP method and Order endpoint and token to authorization header")
 	def SetGETHTTPmethodandOrderendpointsetoken(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Positive/Get All Order'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
-		
 	}
-	
+
 	@Given("Set GET HTTP method and Order endpoint")
 	def SetGETHTTPmethodandOrderendpoint(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Negative/Get All Order without token'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 401)
 	}
-	
+
 	@Given("Set GET HTTP method and Order endpoint with ID")
 	def SetGETHTTPmethodandOrderendpointwithID(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Positive/Get Order by ID'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 200)
 	}
-	
+
 	@Given("Set GET HTTP method and Order endpoint with invalid ID")
 	def SetGETHTTPmethodandOrderendpointwithinvalidID(){
 		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Order/Negative/Get Order with invalid id'))
-		
+
 		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 500)
-		
 	}
-	
+
 	@When("Set Order payload with valid data")
 	def SetCategoriespayloadwithvaliddata(){
-		
 	}
 }

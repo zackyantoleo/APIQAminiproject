@@ -13,8 +13,8 @@ Feature: Register
     And Send POST HTTP request
     Then Receive invalid Register HTTP response code 400
     
-    Scenario: Login with invalid payload format
+    Scenario: Register with invalid payload format
     Given Set POST HTTP method and register endpoint
     When Set new user payload with invalid payload format
     And Send POST HTTP request    
-    Then Receive invalid HTTP response code 400
+    Then Receive invalid Register HTTP response code 400
