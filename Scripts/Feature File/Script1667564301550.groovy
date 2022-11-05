@@ -27,5 +27,5 @@ CucumberKW.runFeatureFile('Include/features/Categories.feature')
 
 CucumberKW.runFeatureFile('Include/features/Order.feature')
 
-CucumberKW.runFeatureFile('Include/features/UserInformation.feature')
+CucumberKW.runFeatureFile('Include/features/Product.feature')
 

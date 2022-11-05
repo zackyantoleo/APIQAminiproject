@@ -97,4 +97,23 @@ class productsteps {
 	@And("Send DELETE HTTP request")
 	def SendDELETEHTTPrequest(){
 	}
+
+	@When("Set Product payload without name")
+	def SetProductpayloadwithoutname(){
+		GlobalVariable.responseglob = WS.sendRequest(findTestObject('Product/Negative/Create New Product without name'))
+		
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 500)
+	}
+
+	@Given("Set DELETE HTTP method and Product endpoint with invalid id")
+	def SetDELETEHTTPmethodandProductendpointwithinvalidid(){
+		GlobalVariable.responseglob  = WS.sendRequest(findTestObject('Product/Negative/Delete Product invalid ID'))
+		
+		WS.verifyResponseStatusCode(GlobalVariable.responseglob, 400)
+		
+	}
+
+	@Given("Set GET HTTP method and Product endpoint with invalid id")
+	def SetGETHTTPmethodandProducendpointwithinvalidid(){
+	}
 }
